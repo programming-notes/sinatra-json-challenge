@@ -1,4 +1,4 @@
-# P7 JavaScript Ajax And jQuery 
+# Request and Send JSON 
  
 ##Learning Competencies 
 
