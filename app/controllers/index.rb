@@ -3,7 +3,7 @@ get '/' do
   erb :index
 end
 
-post '/color' do
+get '/colors/random' do
 
   #Create and return a JSON object with the random cell and color given below.
 
