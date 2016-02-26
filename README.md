@@ -1,11 +1,5 @@
 # Request and Send JSON 
  
-##Learning Competencies 
-
-  * Write custom event handlers in JavaScript and jQuery
-  * Use AJAX actions to change views based on async data
-  * Use JSON to pass data via and AJAX call and modify the DOM
-
 ##Summary 
 
 For this challenge, your task is add jQuery to the provided skeleton `simon-says` directory to mimic the behavior shown in [this exciting video](http://player.vimeo.com/video/65261103) **NOTE:** Each new color is added after the user clicks the "Click Me' button.
