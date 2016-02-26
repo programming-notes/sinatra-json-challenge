@@ -24,7 +24,7 @@ button {
   padding: 2em;
  }
 
- button:hover {
+ button:active {
   background-color: #828c91;
  }
 
