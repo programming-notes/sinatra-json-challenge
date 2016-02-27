@@ -6,7 +6,6 @@ module ColorHexCodes
     "#f26539",
     "#f7941e",
     "#bddde1",
-    "#c8c8c8",
     "#2d425c",
     "#5a5a5a"
   ]

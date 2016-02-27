@@ -16,7 +16,8 @@ button {
 	color: white;
   background-color: #19abb5;
   border: none;
-  border-radius: 10px;
+  font-size: 1em;
+  border-radius: 1em;
   outline: none;
 	display: block;
   width: 100%;
@@ -58,14 +59,14 @@ button {
   float: left;
   height: 0;
   padding-bottom: 33.33%;
-  border: solid #828c91 1px;
+  background-color: #c8c8c8;
   margin: 0;
+  border: solid white 3px;
 }
 
 .cells {
   margin: 0 auto;
   padding: 0;
-  border: solid #828c91 1px;
   overflow: auto;
   width: 100%;
  }
@@ -76,4 +77,20 @@ button {
     width: 100%;
     max-width: 400px;
     padding: 0 1em;
+}
+
+.round-top-left {
+  border-top-left-radius: 1em;
+}
+
+.round-top-right {
+  border-top-right-radius: 1em;
+}
+
+.round-bottom-left {
+  border-bottom-left-radius: 1em;
+}
+
+.round-bottom-right {
+  border-bottom-right-radius: 1em;
 }
