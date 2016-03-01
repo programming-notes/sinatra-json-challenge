@@ -27,15 +27,8 @@ Modify the provided code to implement the functionality shown in Figure 1:
 *Note:*  Do not modify the HTML.
 
 
-##Optimize Your Learning 
-
-When you are done, make sure:
-
-  * Your code produces a game that runs the same as the one in the video
-  * Your code is well factored
-  * You can clearly explain each how your code meets each of the Learning Goals above
-
-##Resources
+## Conclusion
+Sending and receiving JSON is a common way of transmitting data.  When our route handlers respond to requests with HTML, they combine the data returned with the presentation of the data.  Therefore, they're useful to specific applications where that presentation is appropriate.  When a server can respond with JSON, it's returning only data, which can be used in any number of ways.
 
 
 [JSON]: http://www.json.org/
