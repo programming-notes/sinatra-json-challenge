@@ -15,17 +15,17 @@ On the client side ... when we make a request, we can specify that we want JSON 
 On the server side ... up to this point, when we receive an AJAX request, we probably send back text or HTML. Now, if a request asks for JSON, we want to respond with JSON.  To do so, we want to set the `Content-Type` response header to be JSON, and we also need to format the data we're sending back as JSON.  We'll need to figure out how to do this in Sinatra.
 
 
+## Releases
+### Release 0: Update Cell Colors
+Modify the provided code to implement the functionality shown in Figure 1:
 
+- The user clicks the button.
+- An AJAX request for JSON is submitted to `/colors/random`.
+- The route handler returns JSON including a cell number and a color hexcode.
+- The background color of the cell number is changed to the hexcode.
 
-##Releases
+*Note:*  Do not modify the HTML.
 
-###Release 0 :
-
-Modify the shell code to implement the following functionality:
-
-* Clicking on the 'Click Me' button submits an AJAX request to the '/colors' route  
-* return a JSON object the server with a random color and cell number  
-* change the background color of the cell number returned to the color - WITHOUT MODIFYING THE HTML  
 
 ##Optimize Your Learning 
 
