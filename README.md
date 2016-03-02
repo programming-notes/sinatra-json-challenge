@@ -8,7 +8,7 @@ Our task is to take a webpage and add some specific JavaScript behavior, as seen
 
 
 ### JSON: JavaScript Object Notation
-[JSON][] is a common, agreed-upon format for representing data as a string. Many languages have JSON libraries that can take data (e.g., hashes and arrays) and turn it into a JSON string. Those libraries can also take a JSON string and turn it back into data.
+[JSON][] is a common, agreed-upon format for representing data as a string; this is called [*serialization*][wikipedia serialization]. Many languages have JSON libraries that can take data (e.g., hashes and arrays) and turn it into a JSON string. Those libraries can also take a JSON string and turn it back into data.
 
 This is useful when one language wants to communicate with another. For example, Ruby can turn an array into a JSON string and send it to a web browser. On the browser side, Javascript can take that JSON string and turn it into a Javascript array on the other side.
 
@@ -34,5 +34,6 @@ Sending and receiving JSON is a common way of transmitting data.  When our route
 
 
 [JSON]: http://www.json.org/
+[wikipedia serialization]: https://en.wikipedia.org/wiki/Serialization
 
 
