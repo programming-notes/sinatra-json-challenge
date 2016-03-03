@@ -18,6 +18,44 @@ On the server side, up to this point when we receive an AJAX request, we probabl
 
 
 ## Releases
+### Pre-release: Move Data from Ruby to JavaScript by Hand
+We're going to simulate the process of sending data from a Ruby application to JavaScript by doing it manually, using JSON as the data-storage format that both languages understand.  We'll start by creating some data in Ruby.  In IRB, we'll create an array containing a couple hashes, which contain data for dogs.  Then we'll generate JSON that represents this data.
+
+Open IRB and execute the code in Figure 2.
+
+```ruby
+require 'json'
+# => true 
+jayda = { name: "Jayda", breed: "Bull Terrier" }
+# => {:name=>"Jayda", :breed=>"Bull Terrier"} 
+tenley = { name: "Tenley", breed: "Golden Doodle" }
+# => {:name=>"Tenley", :breed=>"Golden Doodle"} 
+dogs = [jayda, tenley]
+# => [{:name=>"Jayda", :breed=>"Bull Terrier"}, {:name=>"Tenley", :breed=>"Golden Doodle"}] 
+JSON.generate(dogs)
+# => "[{\"name\":\"Jayda\",\"breed\":\"Bull Terrier\"},{\"name\":\"Tenley\",\"breed\":\"Golden Doodle\"}]" 
+```
+*Figure 2*.  Generating JSON in Ruby.
+
+The last line in Figure 2 creates a JSON-formatted string that represents the data in the `dogs` array and each hash within the array.  Now we want to take that JSON and use it to recreate those objects in JavaScript.
+
+We're going to literally copy-and-paste the JSON string from Ruby into Javascript.  Open the JavaScript console in the browser and execute the code in Figure 3.
+
+```javascript
+dogs = JSON.parse("[{\"name\":\"Jayda\",\"breed\":\"Bull Terrier\"},{\"name\":\"Tenley\",\"breed\":\"Golden Doodle\"}]");
+// => [ { name: 'Jayda', breed: 'Bull Terrier' }, { name: 'Tenley', breed: 'Golden Doodle' } ]
+jayda = dogs[0]
+// => { name: 'Jayda', breed: 'Bull Terrier' }
+jayda.name
+// => 'Jayda'
+jayda.breed
+// => 'Bull Terrier'
+```
+*Figure 3*.  Parsing JSON into JavaScript objects.
+
+The data from our Ruby objects was serialized into JSON, which we were then able to parse into JavaScript objects.  The data for the Ruby array is now represented as a JavaScript array.  The data for each Ruby hash is now represented as a JavaScript object.
+
+
 ### Release 0: Update Cell Colors
 Modify the provided code to implement the functionality shown in Figure 1:
 
