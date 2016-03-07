@@ -61,7 +61,7 @@ jayda.breed
 ```
 *Figure 3*.  Parsing JSON into JavaScript objects.
 
-The data from our Ruby objects was serialized into JSON, which we were then able to parse into JavaScript objects.  The data for the Ruby array is now represented as a JavaScript array.  The data for each Ruby hash is now represented as a JavaScript object.
+The data from our Ruby objects was serialized into JSON (i.e., it was transformed into a string), which we were then able to parse into JavaScript objects.  The Ruby `jayda` and `tenley` hashes and the `dogs` array that held them were all converted to a string. We copied the Ruby string, pasted it in JavaScript as a string, and then parsed the string into JavaScript objects.  The data for the Ruby `dogs` array is now represented as a JavaScript array.  The data for the `jayda` and `tenley` Ruby hashes is now represented as a JavaScript object.
 
 
 ### Release 0: Update Cell Colors
