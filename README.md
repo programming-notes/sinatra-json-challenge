@@ -42,9 +42,10 @@ The last line in Figure 2 creates a JSON-formatted string that represents the da
 We're going to literally copy-and-paste the JSON string from Ruby into Javascript.  Open the JavaScript console in the browser and execute the code in Figure 3.
 
 ```javascript
-dogs = JSON.parse("[{\"name\":\"Jayda\",\"breed\":\"Bull Terrier\"},{\"name\":\"Tenley\",\"breed\":\"Golden Doodle\"}]");
+var dogsJsonString = "[{\"name\":\"Jayda\",\"breed\":\"Bull Terrier\"},{\"name\":\"Tenley\",\"breed\":\"Golden Doodle\"}]"
+var dogs = JSON.parse(dogsJsonString);
 // => [ { name: 'Jayda', breed: 'Bull Terrier' }, { name: 'Tenley', breed: 'Golden Doodle' } ]
-jayda = dogs[0]
+var jayda = dogs[0]
 // => { name: 'Jayda', breed: 'Bull Terrier' }
 jayda.name
 // => 'Jayda'
