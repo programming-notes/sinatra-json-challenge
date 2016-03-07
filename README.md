@@ -43,9 +43,16 @@ We're going to literally copy-and-paste the JSON string from Ruby into Javascrip
 
 ```javascript
 var dogsJsonString = "[{\"name\":\"Jayda\",\"breed\":\"Bull Terrier\"},{\"name\":\"Tenley\",\"breed\":\"Golden Doodle\"}]"
+// => undefined
+dogsJsonString
+// => '[{"name":"Jayda","breed":"Bull Terrier"},{"name":"Tenley","breed":"Golden Doodle"}]'
 var dogs = JSON.parse(dogsJsonString);
+// => undefined
+dogs
 // => [ { name: 'Jayda', breed: 'Bull Terrier' }, { name: 'Tenley', breed: 'Golden Doodle' } ]
 var jayda = dogs[0]
+// => undefined
+jayda
 // => { name: 'Jayda', breed: 'Bull Terrier' }
 jayda.name
 // => 'Jayda'
