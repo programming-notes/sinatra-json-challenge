@@ -12,9 +12,7 @@ Our task is to take a webpage and add some specific JavaScript behavior, as seen
 
 This is useful when one language wants to communicate with another. For example, Ruby can turn an array into a JSON string and send it to a web browser. On the browser side, Javascript can take that JSON string and turn it into a Javascript array on the other side.
 
-We're going to learn to both request and return JSON.  On the client side, when we make a request, we can specify that we want JSON to be returned by setting the `Accept` header.  When the response is received, we also need to interpret the response as JSON.  If we make an AJAX request and want JSON returned, using the `jQuery.ajax()` method, we can handle both of these by specifying the `dataType` we're expecting back from the server.
-
-On the server side, up to this point when we receive an AJAX request, we probably send back text or HTML. Now, if a request asks for JSON, we want to respond with JSON.  To do so, we want to set the `Content-Type` response header to be JSON, and we also need to format the data we're sending back as JSON.  We'll need to figure out how to do this in Sinatra.
+We're going to learn to both request and return JSON.  On the client side, when we make a request, we can specify that we want JSON to be returned by setting the `Accept` header.  When the response is received, we also need to interpret the response as JSON.  On the server side, up to this point when we receive an AJAX request, we probably send back text or HTML. Now, if a request asks for JSON, we want to respond with JSON.  To do so, we want to set the `Content-Type` response header to be JSON, and we also need to format the data we're sending back as JSON.  We'll need to figure out how to do this in Sinatra.
 
 
 ## Releases
